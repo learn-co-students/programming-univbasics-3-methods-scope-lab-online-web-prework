@@ -64,13 +64,13 @@ def toadstool
 end
 ```
 
-Notice that the body of this method is setting a calling a variable that is set
-in the `#mario` method. When we run the tests, we are getting a `NameError`
-because `status` is `undefined`.
+Notice that the body of this method is calling a variable that is set in the
+`#mario` method. When we run the tests, we are getting a `NameError` because
+`status` is `undefined`.
 
 Wait a minute, you might be wondering. Didn't we define `status` inside the
 `#mario` method? We did, but variables defined inside a method are only
-accessible to that method. They are not available outside of that method in any
+accessible to _that_ method. They are not available outside of _that_ method in any
 other context.
 
 Make sure that the `status` variable is in the correct context to be used by the
