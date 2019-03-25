@@ -2,18 +2,17 @@
 
 ## Learning Goals
 
-- Define a local variable with the expected value
-- Recognize the restrictions of local variable scope
-- Define a method that outputs a popular catch phrase
-- Define a method that takes in an argument
+- Define a local variable
+- Define a method
+- Define a method that takes an argument
 
 ## Introduction
 
-We're going to build a catch phrase generator. Using knowledge of methods,
-scope, and variables, we're going to create a few methods that print a catch
-phrase from some popular video games.
+We're going to build a catch phrase generator that output catch phrases from
+some popular video games. Let's put our knowledge of methods, scope, and
+variables, to use!
 
-## Define a Local Variable With the Expected Value
+## Define a Local Variable
 
 Open up `lib/catch_phrases.rb`. You should see the following method:
 
@@ -57,8 +56,6 @@ called, the output should be "It's-a me, Mario!"
 Once `phrase` is defined in the method, the first test should pass. Let's move
 on to the next method!
 
-## Recognize the Restrictions of Local Variable Scope
-
 In `lib/catch_phrases.rb`, take a look at the following method:
 
 ```ruby
@@ -88,7 +85,7 @@ Now that our first two tests should be passing, let's try writing a method from
 scratch on our own. In `lib/catch_phrases.rb`, define the method `link` that
 will output the phrase "It's Dangerous To Go Alone! Take This."
 
-## Define a Method That Takes in an Argument
+## Define a Method That Takes in Argument
 
 For our final method, we'll want to define the method `any_phrase`. After this
 method is defined, we can see that our next failing test looks like this:
@@ -108,7 +105,7 @@ describe "#any_phrase" do
 end
 ```
 
-This test expects `any_phrase` pass in an argument called `phrase` that outputs
+This test expects `any_phrase` to pass in an argument called `phrase` that outputs
 "Hey! Listen!" Define a method that takes this passed in variable and can output
 the phrase that is assigned to that variable.
 
