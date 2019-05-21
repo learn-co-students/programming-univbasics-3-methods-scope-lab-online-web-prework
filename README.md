@@ -34,15 +34,15 @@ NameError:
   undefined local variable or method `phrase' for #<RSpec::ExampleGroups::CatchPhrasesRb:0x007fa5eb399b88>
 ```
 
-This error is occurring because the code inside the `#mario` method is trying to
+This error is occurring because the code inside the `mario` method is trying to
 use the `phrase` variable **but** it's not present inside the _scope_ of the
-`#mario` method. **It is out of scope.**
+`mario` method. **It is out of scope.**
 
 If we look at the test for this method in `spec/catch_phrase_spec.rb` we can see
 that it expects "It's-a me, Mario!" to be printed out.
 
 ```ruby
-describe "#mario" do
+describe "mario" do
   it "puts out 'It's-a me, Mario!'" do
     phrase = "It's-a me, Mario!"
     expect{mario}.to output("It's-a me, Mario!\n").to_stdout
@@ -50,7 +50,7 @@ describe "#mario" do
 end
 ```
 
-We need to define the variable `phrase` in our `#mario` method. When `phrase` is
+We need to define the variable `phrase` in our `mario` method. When `phrase` is
 called, the output should be "It's-a me, Mario!"
 
 Once `phrase` is defined in the method, the first test should pass. Let's move
@@ -65,16 +65,16 @@ end
 ```
 
 Notice that the body of this method is calling a variable that is set in the
-`#mario` method. When we run the tests, we are getting a `NameError` because
+`mario` method. When we run the tests, we are getting a `NameError` because
 `status` is `undefined`.
 
 Wait a minute, you might be wondering. Didn't we define `status` inside the
-`#mario` method? We did, but variables defined inside a method are only
+`mario` method? We did, but variables defined inside a method are only
 accessible to _that_ method. They are not available outside of _that_ method in any
 other context.
 
 Make sure that the `status` variable is in the correct context to be used by the
-`#toadstool` method.
+`toadstool` method.
 
 Now that we've walked through a couple of methods, let's define two new methods
 from scratch!
@@ -85,19 +85,16 @@ Now that our first two tests should be passing, let's try writing a method from
 scratch on our own. In `lib/catch_phrases.rb`, define the method `link` that
 will output the phrase "It's Dangerous To Go Alone! Take This."
 
-## Define a Method That Takes in Argument
+## Define a Method That Takes in an Argument
 
-For our final method, we'll want to define the method `any_phrase`. After this
-method is defined, we can see that our next failing test looks like this:
+For our final method, we'll want to define the method `any_phrase` that takes
+in a phrase and outputs it. 
 
-```ruby
-expected block to output "Hey! Listen!\n" to stdout, but output nothing
-```
-
-Take a look at our test `rspec spec/catch_phrases_spec.rb`:
+For this method, take a look at our test `rspec spec/catch_phrases_spec.rb`
+to see the exact expectation:
 
 ```ruby
-describe "#any_phrase" do
+describe "any_phrase" do
   it "takes in an argument and puts out the catch phrase" do
     phrase = "Do A Barrel Roll!"
     expect{any_phrase(phrase)}.to output("Do A Barrel Roll!\n").to_stdout
@@ -105,9 +102,9 @@ describe "#any_phrase" do
 end
 ```
 
-This test expects `any_phrase` to pass in an argument called `phrase` that outputs
-"Hey! Listen!" Define a method that takes this passed in variable and can output
-the phrase that is assigned to that variable.
+This test expects `any_phrase` to pass in an argument called `phrase`, in this
+example assigned to `"Do A Barrel Roll!"`. The test expects that 
+`any_phrase(phrase)` will output `"Do A Barrel Roll!\n"`.
 
 Now run your tests again. If all methods have been written correctly, you should
 see four tests passing!
