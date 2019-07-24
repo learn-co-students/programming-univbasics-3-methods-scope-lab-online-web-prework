@@ -1,17 +1,9 @@
-def its_me 
-  phrase = "It's-a me, Mario!\n"
-end
-
-def toad_status
- status = "Thank You Mario! But Our Princess Is In Another Castle!\n"
-end
-
 def mario
-  puts its_me
+  puts "It's-a me, Mario!\n"
 end
 
 def toadstool
- puts toad_status
+ puts "Thank You Mario! But Our Princess Is In Another Castle!\n"
 end
 
 def link 
