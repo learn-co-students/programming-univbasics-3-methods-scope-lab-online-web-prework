@@ -19,3 +19,4 @@ describe "link"
 end
 
 describe "Hey_You"
+  it "takes in an argument and puts out the catch phase"
