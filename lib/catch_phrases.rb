@@ -1,7 +1,7 @@
 'bundler'
 
  "mario"
- it "puts out "
+ it "puts out ' "
   puts 
 end
 
