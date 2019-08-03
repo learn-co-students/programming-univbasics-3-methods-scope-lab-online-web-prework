@@ -6,6 +6,7 @@
   end
  end
   
+"toadstool"
 
 
 def toadstool
