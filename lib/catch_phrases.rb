@@ -2,7 +2,7 @@
 
  "mario"
  it "puts out 'It's-a me Mario!'"
- expect{mario}.to output()
+ expect{mario}.to output("It's-a me Mario")
   puts 
 end
 
