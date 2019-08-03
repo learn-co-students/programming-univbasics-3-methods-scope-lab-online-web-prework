@@ -20,4 +20,5 @@ end
 
 describe "Hey_You"
   it "takes in an argument and puts out the catch phase"
-    
+    "Hey_you" = "Do a Barrel Roll!"
+    expect{any_phrase("hey_you")}.to output("do a barrell roll!").to_ruby
