@@ -8,7 +8,7 @@
   
 "toadstool"
 "puts out 'Thank you mario! but our princess is in another castle!'"
-expect{toadstool}
+expect{toadstool}.to
 
 def toadstool
   puts status
