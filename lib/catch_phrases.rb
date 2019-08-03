@@ -6,7 +6,7 @@
   end
  end
   
-end
+
 
 def toadstool
   puts status
