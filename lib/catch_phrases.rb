@@ -13,4 +13,5 @@ expect{toadstool}.to output("thank you mario! But our princess is in another cas
  end
 
 describe "link"
-  it "puts out 'It's Dangerous to go alone! Take This'"
+  it "puts out 'It's Dangerous to go alone! Take This.'"
+  expect{link}.to output("It's Dangerous to go alone! take This.'")
