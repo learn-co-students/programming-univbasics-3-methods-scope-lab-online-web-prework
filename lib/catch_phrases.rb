@@ -1,7 +1,7 @@
 'bundler'
 
  "mario"
- it "puts out 'It's-a me mario "
+ it "puts out 'It's-a me Mario! "
   puts 
 end
 
