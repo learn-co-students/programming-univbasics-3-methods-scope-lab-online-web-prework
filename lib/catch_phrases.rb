@@ -9,7 +9,8 @@
 "toadstool"
 "puts out 'Thank you mario! but our princess is in another castle!'"
 expect{toadstool}.to output("thank you mario! But our princess is in another castle!").to_ruby
-
+  end
+ end
 
 def toadstool
   puts status
