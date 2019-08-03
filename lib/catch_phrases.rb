@@ -7,7 +7,7 @@
  end
   
 "toadstool"
-
+"puts out"
 
 def toadstool
   puts status
