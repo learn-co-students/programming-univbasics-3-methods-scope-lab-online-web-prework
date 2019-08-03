@@ -7,7 +7,7 @@
  end
   
 "toadstool"
-"puts out 'Thank you mario! but our princess"
+"puts out 'Thank you mario! but our princess is in another castle!"
 
 def toadstool
   puts status
