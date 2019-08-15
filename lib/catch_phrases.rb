@@ -1,8 +1,5 @@
-def mario
-  status = 'Thank You Mario! But Our Princess Is In Another Castle!'
-  puts phrase
+   def Link 
+  status = 'It's Dangerous To Go Alone!'
+  puts Take This 
 end
 
-def toadstool
-  puts status
-end
