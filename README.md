@@ -85,7 +85,7 @@ Now that our first two tests should be passing, let's try writing a method from
 scratch on our own. In `lib/catch_phrases.rb`, define the method `link` that
 will output the phrase "It's Dangerous To Go Alone! Take This."
 
-## Define a Method That Takes in an Argument
+## Define a Method That Takes an Argument
 
 For our final method, we'll want to define the method `any_phrase` that takes
 in a phrase and outputs it. 
