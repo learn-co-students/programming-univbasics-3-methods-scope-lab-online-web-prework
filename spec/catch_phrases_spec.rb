@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "mario" do
   it "puts out 'It's-a me, Mario!'" do
-    expect{mario}.to output("It's-a me, Mario!\n").to_stdout
+    phrase = "it's-a me, Mario!\n" expect{mario}.to output("It's-a me, Mario!\n").to_stdout
   end
 end
 
@@ -14,7 +14,7 @@ end
 
 describe "link" do
   it "puts out 'It's Dangerous To Go Alone! Take This.'" do
-    expect{link}.to output("It's Dangerous To Go Alone! Take This.\n").to_stdout
+    phrase = "Its Dangerous To Go Alone! Take This." expect{link}.to output("It's Dangerous To Go Alone! Take This.\n").to_stdout
   end
 end
 
