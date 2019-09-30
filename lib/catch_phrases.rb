@@ -6,3 +6,5 @@ end
 def toadstool
   puts status
 end
+def tracer
+  status = 'cheers love'
