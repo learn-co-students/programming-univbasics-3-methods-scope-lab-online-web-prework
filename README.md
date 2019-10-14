@@ -1,4 +1,4 @@
-# Method Scope Lab
+rubyrub# Method Scope Lab
 
 ## Learning Goals
 
