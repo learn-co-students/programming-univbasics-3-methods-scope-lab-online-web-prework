@@ -18,15 +18,10 @@ puts link
 end
 
 
-def any_phrase (mario, toadstool, link, phrase)
-phrase= any_phrase
-puts any_phrase
+def any_phrase (phrase)
+  puts phrase
 end
 
-any_phrase ("Mario")
-any_phrase ("toadstool")
-any_phrase ("link")
-any_phrase ("phrase") 
 
 
 #describe "any_phrase" do
