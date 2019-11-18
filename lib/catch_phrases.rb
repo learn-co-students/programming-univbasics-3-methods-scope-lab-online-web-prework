@@ -19,7 +19,7 @@ end
 
 
 def any_phrase (mario, toadstool, link, phrase)
-phrase= "Do A Barrel Roll!"
+phrase= any_phrase
 puts any_phrase
 end
 

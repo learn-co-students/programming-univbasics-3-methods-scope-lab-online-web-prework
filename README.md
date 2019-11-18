@@ -1,4 +1,4 @@
-fing# Method Scope Lab
+i need help on figuring the argumentfing# Method Scope Lab
 
 ## Learning Goals
 
