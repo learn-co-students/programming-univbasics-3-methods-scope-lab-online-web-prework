@@ -8,7 +8,7 @@
 
 ## Introduction
 
-We're going to build a catch phrase generator that output catch phrases from
+We're going to build a catchphrase generator that output catchphrases from
 some popular video games. Let's put our knowledge of methods, scope, and
 variables, to use!
 
@@ -85,7 +85,7 @@ Now that our first two tests should be passing, let's try writing a method from
 scratch on our own. In `lib/catch_phrases.rb`, define the method `link` that
 will output the phrase "It's Dangerous To Go Alone! Take This."
 
-## Define a Method That Takes in an Argument
+## Define a Method That Takes an Argument
 
 For our final method, we'll want to define the method `any_phrase` that takes
 in a phrase and outputs it. 
@@ -95,7 +95,7 @@ to see the exact expectation:
 
 ```ruby
 describe "any_phrase" do
-  it "takes in an argument and puts out the catch phrase" do
+  it "takes in an argument and puts out the catchphrase" do
     phrase = "Do A Barrel Roll!"
     expect{any_phrase(phrase)}.to output("Do A Barrel Roll!\n").to_stdout
   end
@@ -112,6 +112,6 @@ see four tests passing!
 ## Conclusion
 
 We've discussed building methods and recognizing how scope works within the
-context of each method. With these concepts put together we can see how it
+context of each method. With these concepts put together, we can see how it
 functions in practice. As we discuss scope further, we'll understand more about
 how to access variables in different scopes.
