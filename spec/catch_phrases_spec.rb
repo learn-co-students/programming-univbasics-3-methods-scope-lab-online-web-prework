@@ -25,3 +25,9 @@ describe "all_phrases" do
     expect{all_phrases}.to output(/It's Dangerous To Go Alone! Take This.\n/).to_stdout
   end
 end
+
+describe "mario" do
+  it "puts out 'It's-a me, Mario!'" do
+    expect{mario}.to output("It's-a me, Mario!\n").to_stdout
+  end
+end
