@@ -1,8 +1,5 @@
-def mario
-  status = 'Thank You Mario! But Our Princess Is In Another Castle!'
-  puts phrase
-end
-
-def toadstool
-  puts status
+describe "mario" do
+  phrase = "It's-a me Mario!"
+  expect{any_phrase(phrase).to output ("It's-a me Mario!").to_stdout
+  end
 end
